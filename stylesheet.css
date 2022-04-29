@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainwrapper{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.inputsect{
+    border: 1px solid black;
+    height: 85vh;
+    width: 800px;
+   background-color: rgba(128, 128, 128, 0.082);
+}
+
+.inputsect h1{
+   margin-left: 15rem;
+   margin-top: 10px;
+}
+
+.personalinfo{
+    border: 1px solid grey;
+    height: 100px;
+    width: 550px;
+    margin-left: 30px;
+    box-shadow: 40px;
+}
+
+.personalinfo label{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.personalinfo input{
+    box-shadow: none;;
+}
+
+.orders{
+    margin-left: 30px;
+    margin-top: 1px;
+    border: 1px solid grey;
+    height: 370px;
+    width: 550px;
+    background-color: rgba(128, 128, 128, 0.082);
+}
+
+.orders input, label {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.buttons{
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+button{
+ height: 30px; 
+ width: 60px;
+}
+
+button:hover{
+    background-color: aqua;
+    color: black;
+}
+.reset{
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+.success{
+    border: none;
+    background-color: green;
+    color: white;
+}
+
+/* output section */
+
+.outputsect{
+    border: 1px solid black;
+    height: 85vh;
+    width: 450px;
+   background-color: white;
+}
+
+
+.titlesect h3{
+ margin-left: 170px;
+ margin-top: 10px;
+}
+
+.titlesect p{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+table{
+    margin-left: 30px;
+}
+
+th {
+    /* margin-left: 40px; */
+    padding: 1rem;
+}
+
+td {
+    padding: 1rem;
+}
+
+
+
+#totalamt{
+    margin-left: 130px;
+}

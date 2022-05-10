@@ -163,45 +163,21 @@ addItems = (name) => {
 
 // });
 
-function showBill() {
-  document.querySelector("#bill").innerHTML =
-    peakmilkbill +
-    danomilkbill +
-    goodmamabill +
-    spaghettibill +
-    bournvitabill +
-    sharwarmabill +
-    smallchopsbill +
-    basmatibill +
-    poundoflourbill +
-    paintingbrushbill +
-    niveabill +
-    slippersbill;
 
-  let totalAmt = peakmilk_p * peakmilk_q;
-  let totalAmt1 = danomilk_p * danomilk_q;
-  let totalAmt2 = goodmama_p * goodmama_q;
-  let totalAmt3 = sharwarma_p * sharwarma_q;
-  let totalAmt4 = bournvita_p * bournvita_q;
-  let totalAmt5 = smallchops_p * smallchops_q;
-  let totalAmt6 = basmati_p * basmati_q;
-  let totalAmt7 = poundoflour_p * poundoflour_q;
-  let totalAmt8 = paintingbrush_p * paintingbrush_q;
-  let totalAmt9 = nivea_p * nivea_q;
-  let totalAmt10 = slippers_p * slippers_q;
-  let totalAmt11 = spaghetti_p * spaghetti_q;
 
-  document.querySelector(".totalamt").innerHTML =
-    totalAmt +
-    totalAmt1 +
-    totalAmt2 +
-    totalAmt3 +
-    totalAmt4 +
-    totalAmt5 +
-    totalAmt6 +
-    totalAmt7 +
-    totalAmt8 +
-    totalAmt9 +
-    totalAmt10 +
-    totalAmt11;
-}
+//buttons
+const popup = document.querySelector('.successs');
+const popupwrapper = document.querySelector(".popupwrapper");
+const outputsect = document.querySelector('.outputsect');
+const close = document.querySelector('.reset');
+ 
+popup.addEventListener('click', e => {
+  e.preventDefault;
+  popupwrapper.style.display = "block";
+  outputsect.style.display = "block";
+});
+
+close.addEventListener('click', () => {
+  popupwrapper.style.display = "none";
+  outputsect.style.display = "none";
+});

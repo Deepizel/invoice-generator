@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <title>Invoice Generator</title>
   </head>
   <body>
     <div class="mainwrapper">
       <div class="inputsect">
-        <h1>Hemotep Stores</h1>
+        <h4>Hemotep Stores</h4>
         <div class="personalinfo">
           <label for="">Full name</label>
           <input id="fullname" type="text" /> <br />
@@ -23,55 +26,75 @@
         </div>
         <br />
         <div class="orders">
-          <label for="orders">Peak Milk (#850)</label>
-          <input id="peakmilk" type="number" onchange="addItem('peakmilk')" /> <br />
-          <label for="">Dano Milk (#570)</label>
-          <input id="danomilk"type="number" onchange="addItem('danomilk')" /> <br />
-          <label for="">Good Mama 1.5kg (#920)</label>
-          <input id="goodmama"type="number"  onchange="addItem('goodmama')" /> <br />
-          <label for="">Spaghetti (#400)</label>
-          <input id="spaghetti" type="number" onchange="addItem('spaghetti')" /> <br />
-          <label for=""> Bournvita (#1650)</label>
-          <input id="bournvita"type="number"onchange="addItem('bournvita')" /> <br />
-          <label for=""> Sharwarma (#1000)</label>
-          <input id="sharwarma"type="number"onchange="addItem('sharwarma')" /> <br />
-          <label for=""> Small chops (#650)</label>
-          <input id="smallchops"type="number" onchange="addItem('smallchops')"/> <br />
-          <label for=""> Basmati (#6020)</label>
-          <input id="basmati"type="number" onchange="addItem('basmati')" /> <br />
-          <label for=""> Poundo-flour (#2820)</label>
-          <input id="poundoflour"type="number"onchange="addItem('poundoflour')" /> <br />
-          <label for=""> Painting brush (#300)</label>
-          <input id="paintingbrush"type="number" onchange="addItem('paintingbrush')" /> <br />
-          <label for=""> Nivea spray (#1200)</label>
-          <input id="nivea"type="number" onchange="addItem('nivea')"/> <br />
-          <label for=""> Slippers (#10000)</label>
-          <input id="slippers"type="number" onchange="addItem('slippers')"/> <br />
+          <fieldset>
+            <label for="orders">Peak Milk (#850)</label>
+            <input id="peakmilk" type="number" onchange="addItem('peakmilk')" />
+            <br />
+            <label for="">Dano Milk (#570)</label>
+            <input id="danomilk" type="number" onchange="addItem('danomilk')" />
+            <br />
+            <label for="">Good Mama 1.5kg (#920)</label>
+            <input id="goodmama" type="number" onchange="addItem('goodmama')" />
+            <br />
+            <label for="">Spaghetti (#400)</label>
+            <input id="spaghetti" type="number" onchange="addItem('spaghetti')"/>
+            <br />
+            <label for=""> Bournvita (#1650)</label>
+            <input id="bournvita" type="number" onchange="addItem('bournvita')"/>
+            <br />
+            <label for=""> Sharwarma (#1000)</label>
+            <input id="sharwarma type="number" onchange="addItem('sharwarma')"/>
+            <br />
+            <label for="smallchops"> Small chops (#650)</label>
+            <input id="smallchops" type="number" onchange="addItem('smallchops')"/>
+            <br />
+            <label for=""> Basmati (#6020)</label>
+            <input id="basmati" type="number" onchange="addItem('basmati')" />
+            <br />
+            <label for=""> Poundo-flour (#2820)</label>
+            <input id="poundoflour" type="number" onchange="addItem('poundoflour')"/>
+            <br />
+            <label for=""> Painting brush (#300)</label>
+            <input id="paintingbrush" type="number" onchange="addItem('paintingbrush')"/>
+            <br />
+            <label for=""> Nivea spray (#1200)</label>
+            <input id="nivea" type="number" onchange="addItem('nivea')" />
+            <br />
+            <label for=""> Slippers (#10000)</label>
+            <input id="slippers" type="number" onchange="addItem('slippers')" />
+            <br />
+          </fieldset>
           <div class="buttons">
-          <button class="success">Proceed</button> <button class="reset">Reset</button>
+            <button class="successs">Print</button>
+            <button class="resett">Reset</button>
           </div>
         </div>
       </div>
-      <div class="outputsect">
+      <div class="popupwrapper">
+        <div class="outputsect">
           <div class="titlesect">
             <h3>Your Bill</h3>
-            <p>Date: <span class="todaydate">X</Date:span></p>
+            <p>Date: <span class="todaydate">X</span></p>
             <p>Your Name: <span class="fullname"></span></p>
             <p>Email: <span class="email"></span></p>
-         </div>
+          </div>
 
-         <table id="myTable">
-             <thead>
-                 <th>Description</th>
-                 <th>Quantity</th>
-                 <th>Price</th>
-             </thead>
-             <tbody id="bill">
-                 
-             </tbody>
-         </table>
-          <hr>
-        <h3 id="totalamt">Total Amount:N <span class="totalamt"></span> </h3>
+          <table id="myTable">
+            <thead>
+              <th>Description</th>
+              <th>Quantity</th>
+              <th>Price</th>
+            </thead>
+            <tbody id="bill"></tbody>
+          </table>
+          <hr />
+          <h3 id="totalamt">Total:N <span class="totalamt"></span></h3>
+          <div class="buttons">
+            <button onclick="window.print()" class="success">Print</button>
+            <button class="reset">Close</button>
+          </div>
+        </div>
+        
       </div>
     </div>
 
@@ -79,10 +102,4 @@
   </body>
 </html>
 
-
-<script>
-
-</script>
-
-
-
+<script></script>

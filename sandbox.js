@@ -119,7 +119,8 @@ addItem = (id) => {
       sum += parseInt(valList[index]);
     }
 
-    document.getElementsByClassName("totalamt")[0].innerText = sum;
+
+    document.getElementsByClassName("totalamt")[0].innerText = sum.toLocaleString('en');
     //console.log("sum 3", sum);
     //console.log(total);
   }
@@ -170,6 +171,7 @@ const popup = document.querySelector('.successs');
 const popupwrapper = document.querySelector(".popupwrapper");
 const outputsect = document.querySelector('.outputsect');
 const close = document.querySelector('.reset');
+const fieldForm = document.querySelector('form');
  
 popup.addEventListener('click', e => {
   e.preventDefault;
@@ -178,6 +180,7 @@ popup.addEventListener('click', e => {
 });
 
 close.addEventListener('click', () => {
+  fieldForm.reset();
   popupwrapper.style.display = "none";
   outputsect.style.display = "none";
 });

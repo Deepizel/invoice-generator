@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital@1&family=Fredoka+One&family=Josefin+Sans&family=Lily+Script+One&family=Megrim&family=Modak&family=Montserrat:wght@700&family=Slackey&family=Ubuntu&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -60,6 +61,17 @@ label {
 .buttons {
   margin-left: 200px;
   margin-top: 20px;
+  position: absolute;
+}
+
+.buttonss {
+  margin-left: 200px;
+  margin-top: 20px;
+}
+
+label {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
 }
 
 button {
@@ -111,6 +123,7 @@ button:hover {
   height: 85vh;
   width: 450px;
   overflow: scroll;
+  font-family: 'Montserrat', sans-serif;
   background-color: white;
   font-size: 15px;
 }

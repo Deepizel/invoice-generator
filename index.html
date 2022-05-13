@@ -26,45 +26,45 @@
         </div>
         <br />
         <div class="orders">
-          <fieldset>
-            <label for="orders">Peak Milk (#850)</label>
+          <form>
+            <label for="orders">Peak Milk (₦850)</label>
             <input id="peakmilk" type="number" onchange="addItem('peakmilk')" />
             <br />
-            <label for="">Dano Milk (#570)</label>
+            <label for="">Dano Milk (₦570)</label>
             <input id="danomilk" type="number" onchange="addItem('danomilk')" />
             <br />
-            <label for="">Good Mama 1.5kg (#920)</label>
+            <label for="">Good Mama 1.5kg (₦920)</label>
             <input id="goodmama" type="number" onchange="addItem('goodmama')" />
             <br />
-            <label for="">Spaghetti (#400)</label>
+            <label for="">Spaghetti (₦400)</label>
             <input
               id="spaghetti"
               type="number"
               onchange="addItem('spaghetti')"
             />
             <br />
-            <label for=""> Bournvita (#1650)</label>
+            <label for=""> Bournvita (₦1650)</label>
             <input
               id="bournvita"
               type="number"
               onchange="addItem('bournvita')"
             />
             <br />
-            <label for=""> Sharwarma (#1000)</label>
+            <label for=""> Sharwarma (₦1000)</label>
             <input
               id="sharwarma"
               type="number"
               onchange="addItem('sharwarma')"
             />
             <br />
-            <label for="smallchops"> Small chops (#650)</label>
+            <label for="smallchops"> Small chops (₦650)</label>
             <input
               id="smallchops"
               type="number"
               onchange="addItem('smallchops')"
             />
             <br />
-            <label for=""> Basmati (#6020)</label>
+            <label for=""> Basmati (₦6020)</label>
             <input id="basmati" type="number" onchange="addItem('basmati')" />
             <br />
             <label for=""> Poundo-flour (#2820)</label>
@@ -81,17 +81,17 @@
               onchange="addItem('paintingbrush')"
             />
             <br />
-            <label for=""> Nivea spray (#1200)</label>
+            <label for=""> Nivea spray (₦1200)</label>
             <input id="nivea" type="number" onchange="addItem('nivea')" />
             <br />
-            <label for=""> Slippers (#10000)</label>
+            <label for=""> Slippers (₦10000)</label>
             <input id="slippers" type="number" onchange="addItem('slippers')" />
             <br />
-          </fieldset>
-          <div class="buttons">
-            <button class="successs">Print</button>
-            <button class="resett">Reset</button>
-          </div>
+            <div class="buttons">
+              <button class="resett" style="margin-top: 15px; margin-left:90px;">Reset</button>
+            </div>
+          </form>
+          <button class="successs" style="margin-top: 35px; margin-left:150px;">Print</button>
         </div>
       </div>
       <div class="popupwrapper">
@@ -112,8 +112,8 @@
             <tbody id="bill"></tbody>
           </table>
           <hr />
-          <h3 id="totalamt">Total:N <span class="totalamt"></span></h3>
-          <div class="buttons">
+          <h3 id="totalamt">Total:₦ <span class="totalamt"></span></h3>
+          <div class="buttonss">
             <button onclick="window.print()" class="success">Print</button>
             <button class="reset">Close</button>
           </div>
@@ -125,4 +125,3 @@
   </body>
 </html>
 
-<script></script>
